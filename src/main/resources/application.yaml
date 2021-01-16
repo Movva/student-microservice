@@ -1,0 +1,12 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: tiger
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update

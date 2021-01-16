@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "43affe69-728b-461b-8153-0d9979b4b085",
+		"name": "School Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/api/Student/get/7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Naveen/Desktop/2020-01-18 UiPath RPA.txt"
+						}
+					]
+				},
+				"url": "http://localhost:9090/api/Student/get/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/Student/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"naveen\",\r\n    \"lastName\":\"movva\",\r\n    \"address\":[{\r\n        \"doorNo\":\"5\",\r\n        \"streetName\":\"nagar\",\r\n        \"city\":\"Vijayawada\",\r\n        \"state\":\"AP\",\r\n        \"pincode\":\"520007\"\r\n    },\r\n    {\r\n        \"doorNo\":\"8\",\r\n        \"streetName\":\"KPH\",\r\n        \"city\":\"Hyderabad\",\r\n        \"state\":\"Telangana\",\r\n        \"pincode\":\"562100\"\r\n    }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9090/api/Student/create"
+			},
+			"response": []
+		}
+	]
+}
