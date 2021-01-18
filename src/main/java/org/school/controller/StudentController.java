@@ -61,12 +61,12 @@ public class StudentController {
 			addressesList.add(address);
 		}
 		var stu = new Student();
-		stu.setFname(body.getFirstName());
-		stu.setLname(body.getLastName());
+		stu.setFname(body.getFname());
+		stu.setLname(body.getLname());
 		stu.setAddress(addressesList);
 		stu = stuService.createStudent(stu);
 		int id = stu.getId();
-		log.info(String.format("Student created with : {0} for {1}", id,body));
+		log.info(String.format("Student created with : %d for %s", id,body));
 		var stuBody = new StudentResponseBody();
 		stuBody.setId(String.valueOf(id));
 		return ResponseEntity.status(HttpStatus.CREATED)

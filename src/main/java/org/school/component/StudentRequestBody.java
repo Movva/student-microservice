@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class StudentRequestBody {
 	private String id;
-	private String firstName;
-	private String lastName;
+	private String fname;
+	private String lname;
 	private List<AddressRequestBody> address;
 	public List<AddressRequestBody> getAddress() {
 		return address;
@@ -22,17 +22,17 @@ public class StudentRequestBody {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getFirstName() {
-		return firstName;
+	public String getFname() {
+		return fname;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFname(String fname) {
+		this.fname = fname;
 	}
-	public String getLastName() {
-		return lastName;
+	public String getLname() {
+		return lname;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLname(String lname) {
+		this.lname = lname;
 	}
 	
 }

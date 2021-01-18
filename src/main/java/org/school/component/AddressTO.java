@@ -9,6 +9,14 @@ public class AddressTO {
 	private Integer pincode;
 	
 	
+	public AddressTO(String doorNo, String streetName, String city, String state, Integer pincode) {
+		super();
+		this.doorNo = doorNo;
+		this.streetName = streetName;
+		this.city = city;
+		State = state;
+		this.pincode = pincode;
+	}
 	public AddressTO() {
 		super();
 	}

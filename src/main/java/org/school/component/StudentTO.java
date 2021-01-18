@@ -1,12 +1,26 @@
 package org.school.component;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+/**
+ * @author Naveen
+ *
+ */
 @Component
 public class StudentTO {
 	
+	@Override
+	public String toString() {
+		return String.format("StudentTO [id=%s, fname=%s, lname=%s, address=%s]", id, fname, lname, address);
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
 	private Integer id;
 	
 	private String fname;
@@ -16,6 +30,14 @@ public class StudentTO {
 
 	public List<AddressTO> getAddress() {
 		return address;
+	}
+
+	public StudentTO(String fname, String lname, List<AddressTO> address) {
+		super();
+		this.fname = fname;
+		this.lname = lname;
+		this.address = new ArrayList<AddressTO>();
+		this.address.addAll(address);
 	}
 
 	public StudentTO() {

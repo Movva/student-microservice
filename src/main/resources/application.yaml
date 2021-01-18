@@ -2,10 +2,13 @@ server:
   port: 9090
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    driverClassName: org.postgresql.Driver
-    username: postgres
-    password: tiger
+    # jdbc:mysql::/localhost/{dbName}
+    # jdbc:postgresql://localhost:5432/{dbName}
+    url: 
+    # com.mysql.jdbc.Driver
+    driverClassName: 
+    username: 
+    password: 
   jpa:
     show-sql: true
     hibernate:
